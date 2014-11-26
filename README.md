@@ -25,7 +25,7 @@ jeu de stratégie temps réel multi-joueurs
 
         En transfert, les conflits entre unités ennemies qui se croisent sont résolus immédiatement;
 
-    **Petit lexique**
+#### Petit lexique
 
     ** Terrain ** : graphe géométrique planaire dont les n\oe uds sont les cellules du jeu
     ** Cellule ** : noeud du graphe, avec ses propriétés
