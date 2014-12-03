@@ -16,3 +16,7 @@ de 1 vers 2 ('>') : 3 unités du joueur 1 ont quitté la cellule 1 au temps 4330
 de 3 vers 1 ('<') : 10 unités du joueur 1 ont quitté la cellule 3 à 2241.
  
 A chaque collision, le nombre d'unités est mis à jour (et le mouvement d'effectif le plus faible disparaît). Cela constitue un nouvel événement (générant un nouvel état du jeu).
+
+-----------------------------------------------------
+La cadence de production des unités offensives admet 3 valeurs : 2 (I), 3/4 (II) et 1 (III), indexées sur l'unité de temps (pour fixer les idées, la seconde). 
+La cadence de production des unités défensives est unique et identique pour toutes les cellules. Elle est indexée sur la cadence I (2 secondes).
