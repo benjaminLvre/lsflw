@@ -1,0 +1,18 @@
+STATE<matchid>IS<#players>;<#cells>CELLS:<cellid>[<owner>]<offunits>'<defunits>,...;\
+<#moves>MOVES:<cellid><direction><#units>[<owner>]@<timestamp>'...<cellid>,...
+
+
+4MOVES:   1<5[2]@232 ' ?>6[2]@488 ' ?>3[1]@4330 ' 2 , 1<10[1]@2241'3
+
+D'abord, il faut noter que la virgule sépare l'information de chaque arc. Donc ici, il y a 4 mouvements sur 2 arcs : (1,2) et (1,3). Les cellid's sont aux extrémités de ces 2 sous-séquences séparées par une virgule.
+
+Ensuite, sur chaque arc, un mouvement se termine par une apostrophe. Le premier arc contient donc 3 mouvements, le second 1 seul. 
+
+Les 4 mouvements de l'exemple s'interprètent de la façon suivante :
+
+de 2 vers 1 (symbole de direction '<') : 5 unités du joueur 2 ont quitté la cellule 2 au temps 232 (en millisecondes depuis le début du jeu).
+de 1 vers 2 ('>') : 6 unités de 2 ont quitté la cellule 1 au temps 488.
+de 1 vers 2 ('>') : 3 unités du joueur 1 ont quitté la cellule 1 au temps 4330.
+de 3 vers 1 ('<') : 10 unités du joueur 1 ont quitté la cellule 3 à 2241.
+ 
+A chaque collision, le nombre d'unités est mis à jour (et le mouvement d'effectif le plus faible disparaît). Cela constitue un nouvel événement (générant un nouvel état du jeu).
