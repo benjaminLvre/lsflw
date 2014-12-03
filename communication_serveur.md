@@ -4,9 +4,9 @@ sont exposées par le module poooc.
 
 Ces fonctions sont au nombre de 4 :
 
----- order(msg) ----
+### order(msg)
 
-Ordonne un mouvement
+##### Ordonne un mouvement
 
 :param move: ordre conforme à [<userid>]MOV<%offunits>FROM<cellid>TO<cellid>
 :type move: chaîne de caractères (utf-8 string)
@@ -17,9 +17,9 @@ Ordonne un mouvement
 
 Le pourcentage des unités offensives utilise la divion entière. Par exemple : 25% de 50 égal à 50*25/100=12. Un ordre dont l'effectif d'unités off est nul (par ex., 33% de 2 unités) est ignoré, tout comme des ordres incorrects (cellule non occupée, cellules non adjacentes, etc.)
 
----- state() ----
+### state() 
 
-Demande l'état courant du jeu
+##### Demande l'état courant du jeu
 
 :return: état conforme à
 STATE<matchid>IS<#players>;<#cells>CELLS:<cellid>[<owner>]<offunits>'<defunits>,...;\
@@ -33,18 +33,18 @@ STATE<matchid>IS<#players>;<#cells>CELLS:<cellid>[<owner>]<offunits>'<defunits>,
 <timestamp> en millisecondes, donnée à vitesse x1 : top départ des unités de la cellule source. 
 <direction> désigne le caractère '>' ou '<' et indique le sens des unités en mouvement en suivant la pointe de flèche.
 
----- state_on_update() ----
+### state_on_update()
 
-Demande l'état du jeu modifié
+##### Demande l'état du jeu modifié
 
 La valeur de retour est identique à celle de la fonction state()
 La principale différence provient du fait que le processus est mis en attente d'une mise à jour de l'état du jeu
 
 L'appel de state_on_update() est bloquant
 
----- etime() ----
+### etime()
 
-Retourne le temps écoulé (elapsed time) depuis le début du match
+##### Retourne le temps écoulé (elapsed time) depuis le début du match
 
 :return: temps écoulé (elapsed time) en millisecondes
 :rtype: entier
