@@ -3,6 +3,9 @@
 
 Depôt du groupe STFU pour le jeu Little Stars For Little War
 
+
+http://madoc.univ-nantes.fr/course/view.php?id=29903
+
 ### Les règles du jeu
 
 jeu de stratégie temps réel multi-joueurs
