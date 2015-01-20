@@ -1,3 +1,9 @@
+La cadence de production des unités offensives admet 3 valeurs : 2 sec (I), 3/2 sec (II) et 1 sec (III)
+
+La cadence de production des unités défensives est unique et identique pour toutes les cellules.
+Elle est indexée sur la cadence I (2 secondes).
+
+
 STATE<matchid>IS<#players>;<#cells>CELLS:<cellid>[<owner>]<offunits>'<defunits>,...;\
 <#moves>MOVES:<cellid><direction><#units>[<owner>]@<timestamp>'...<cellid>,...
 
